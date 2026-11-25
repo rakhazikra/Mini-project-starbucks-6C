@@ -1,16 +1,11 @@
 import csv
 
-# ---------- Inisialisasi data ---------- #
 FILE = "starbucks.csv"
 KOLOM = ["item", "calories", "fat", "carb", "fiber", "protein", "type"]
 ANGKA = ["calories", "fat", "carb", "fiber", "protein"]
 TOPPING = {"mentega": 102, "selai": 56, "cream cheese": 51}
 
-
-
-# ---------- Fungsi bantu ----------
 def validasi_data(baris):
-    # Sub flowchart validasi data: True jika data valid
     for k in KOLOM:
         if k not in baris:
             return False
@@ -49,7 +44,7 @@ def baca_file_csv():
 
 
 def hilangkan_nol_desimal(angka):
-    # 350.0 ditampilkan 350, 2.5 tetap 2.5
+   
     if angka == int(angka):
         return int(angka)
     return angka
@@ -64,14 +59,14 @@ def cari_menu(menu, kata):
 
 
 def tampilkan_tabel_menu(daftar):
-    # Kotak "tampilkan tabel" di flowchart: mencetak daftar menu dalam bentuk tabel
+   
     print(f"{'Nama Menu':<56}{'Kalori':<8}{'Lemak':<7}{'Karbo':<7}{'Serat':<7}{'Protein'}")
     for m in daftar:
         print(f"{m['item']:<56}{hilangkan_nol_desimal(m['calories']):<8}{hilangkan_nol_desimal(m['fat']):<7}"
               f"{hilangkan_nol_desimal(m['carb']):<7}{hilangkan_nol_desimal(m['fiber']):<7}{hilangkan_nol_desimal(m['protein'])}")
 
 
-# ---------- Fitur menu ----------
+
 def cari_dan_tampilkan_menu(menu):
     kata = input("Kata kunci menu: ")
     hasil = cari_menu(menu, kata)
@@ -82,7 +77,7 @@ def cari_dan_tampilkan_menu(menu):
 
 
 def tampilkan_menu_utama():
-    # Kotak "tampilkan menu utama" di flowchart utama
+
     print("\n=== MENU UTAMA ===")
     print("1. Cari menu")
     print("2. Statistik nutrisi (rata-rata, maks, min)")
@@ -93,7 +88,6 @@ def tampilkan_menu_utama():
     print("0. Keluar")
 
 
-# ---------- Program utama ----------
 def main():
     print("=== MINI PROJECT PEMROGRAMAN KOMPUTER - KELOMPOK 6C ===")
     menu = baca_file_csv()
