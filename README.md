@@ -48,7 +48,7 @@ Program menyediakan 6 menu layanan interaktif di terminal:
 │   └── Flowchart/                          # Diagram alur (Main & Sub-Flowchart)
 └── README.md                               # Dokumentasi utama repository
 ```
-*(Catatan: Sesuaikan nama file skrip dan direktori dengan struktur aktual pada repositori Anda)*
+
 
 ---
 
