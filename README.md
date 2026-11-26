@@ -73,9 +73,9 @@ Pengelompokan tingkat kalori menu didasarkan pada ambang batas berikut:
 
 | Kategori Kalori | Rentang Nilai Kalori |
 | :--- | :--- |
-| **Rendah** | `< 220 kkal` |
-| **Sedang** | `220 kkal <= Kalori < 360 kkal` |
-| **Tinggi** | `>= 360 kkal` |
+| **Rendah** | `< 100 kkal` |
+| **Sedang** | `100kkal <= Kalori < 400 kkal` |
+| **Tinggi** | `>= 400 kkal` |
 
 ---
 
