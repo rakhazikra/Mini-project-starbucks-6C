@@ -43,7 +43,6 @@ Program menyediakan 6 menu layanan interaktif di terminal:
 ├── dataset/                                # Dataset proyek
 │   └── starbucks.csv                       # Dataset nutrisi makanan Starbucks (Kaggle)
 ├── output/                                 # Keluaran program
-│   └── hasil_klasifikasi_kalori.csv        # File CSV hasil klasifikasi tingkat kalori
 ├── docs/                                   # Berkas pendukung
 │   ├── Laporan_Mini_Project_Kelompok_6C.pdf # Laporan lengkap Mini Project
 │   └── Flowchart/                          # Diagram alur (Main & Sub-Flowchart)
